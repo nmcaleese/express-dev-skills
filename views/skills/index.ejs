@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Express Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
     <h1>Skills</h1>
     <ul>
       <% skills.forEach(function(skill) { %>
         <li>
-          <a href="/skills/<%= skills.id %>"><%= skill.skill %></a>
+          <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
              aaaaand ...
           <%= skill.skill ? 'Mastered!' : 'not quite mastered' %>
         </li>
